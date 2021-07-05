@@ -75,8 +75,8 @@ public class EcommApplication implements CommandLineRunner {
 		Profile ikramProfile = new Profile("Ikram", "Dagci", Gender.Male);
 		ikramProfile.setBirthday(Date.valueOf("1996-3-8"));
 		ikramProfile.setEmailAddress("ikram@example.com");
-		ikramProfile.setWebsite("github.com/ikramgaci");
-		ikramProfile.setAddress("Bayramoglu,KOCAELI");
+		ikramProfile.setWebsite("example.com");
+		ikramProfile.setAddress("Darıca,KOCAELI");
 		ikramProfile = _profileRepository.save(ikramProfile);
 
 		ikramProfile = _profileRepository.findById(3L).get();
